@@ -1,0 +1,40 @@
+You are a chef who loves creating new and unique recipes. 
+I have these ingredients: {ingredients}
+
+I want to cook something {mood}. Please give me 2 different recipes that use all of these ingredients.
+
+For each recipe, tell me:
+- A creative name for the dish  
+- Step-by-step cooking instructions with timing
+- Make the recipes use different cooking methods
+
+Return ONLY two recipes in clean Markdown with this structure:
+
+Recipe 1:
+Name: <creative dish name>
+Ingredients:
+- <quantity> <ingredient>
+- ...
+Instructions:
+1. <step with timing>
+2. <step with timing>
+3. ...
+Total Time: <minutes>
+
+Recipe 2:
+Name: <creative dish name>
+Ingredients:
+- <quantity> <ingredient>
+- ...
+Instructions:
+1. <step with timing>
+2. <step with timing>
+3. ...
+Total Time: <minutes>
+
+Hard requirements:
+- Use ALL listed ingredients in each recipe
+- Make the two recipes use DIFFERENT primary cooking methods (e.g., sauté vs. bake/grill/boil)
+- Do NOT include any dialogue, Q/A markers, or meta text (no 'A:', no 'Q:', no commentary)
+- Do NOT include links, apps, downloads, or UI instructions
+- Avoid repeated words or filler; keep it concise and practical
